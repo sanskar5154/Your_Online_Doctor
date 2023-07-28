@@ -1,0 +1,280 @@
+:root {
+    --lighting-color: #0089b7;
+    --dark-color: #003d62;
+    --darker-color: #003251;
+    --secondary-color: #fff700;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body,
+  html {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    color: white;
+  }
+  
+  body {
+     font-size: 1.4rem;
+  }
+    .container {
+      max-width: 130rem;
+      margin: 0 auto;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+      }
+      ul {
+        list-style: none;
+      }
+      header {
+        background: var(--lighting-color);
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+      }
+      nav ul {
+        display: flex;
+        gap: 1rem;
+      }
+      nav li {
+        font-size: 2rem;
+        border-bottom: 0.4rem transparent solid;
+        transition: 0.3s ease-in-out;
+        font-weight: bold;
+        padding: 1rem;
+      }
+      nav li:hover {
+        border-bottom: 0.4rem var(--secondary-color) solid;
+        transition: 0.3s ease-in-out;
+      }
+      .logo {
+        display: flex;
+        font-size: rem;
+        font-weight: 700;
+      }
+      #phome {
+        background: var(--dark-color);
+        padding: 4rem 0;
+        border-bottom: 0.4rem solid var(--lighting-color);
+        
+     }
+     #phome .container {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+     }
+     .phome_content {
+        display: grid;
+        place-items: center;
+      }
+      #phome h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      #phome h3{
+     font-size: 2rem;
+     font-weight: bold;
+     }
+     #phome .pmed {
+        font-size:  3rem;
+         color: var(--secondary-color);
+     }
+     #phome .p2med {
+        font-size:  2rem;
+         color: var(--secondary-color);
+     }
+
+     /*allopathic*/
+     #allopathic {
+        background: var(--darker-color);
+        padding: 1rem 0;
+        border-bottom: 0.4rem solid var(--lighting-color);
+        
+     }
+     #allopathic .container {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       padding: 3rem;
+     }
+     
+     .allopathic_content {
+        display: grid;
+        padding: 3rem;
+        /* place-items:  ; */
+      }
+      #allopathic h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      #allopathic h3{
+     font-size: 2rem;
+     font-weight: bold;
+     }
+     #allopathic .pmed {
+        font-size:  4rem;
+         color: var(--secondary-color);
+     }
+     #allopathic .p2med {
+        font-size:  2rem;
+         color: var(--secondary-color);
+     }
+     /*Remedies*/
+
+     #Remedies {
+        background: var(--dark-color);
+        padding: 1rem 0;
+        border-bottom: 0.4rem solid var(--lighting-color);
+        
+     }
+     #Remedies .container {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       padding: 3rem;
+     }
+     .Remedies_content {
+        display: grid;
+        padding: 3rem;
+        /* place-items:  ; */
+      }
+      #Remedies h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      #Remedies h3{
+     font-size: 2rem;
+     font-weight: bold;
+     }
+     #Remedies .pmed {
+        font-size:  4rem;
+         color: var(--secondary-color);
+     }
+     #Remedies .p2med {
+        font-size:  2rem;
+         color: var(--secondary-color);
+     }
+     /*prevention&*/
+     
+     #Remedies2 {
+        background: var(--darker-color);
+        padding: 1rem 0;
+        border-bottom: 0.4rem solid var(--lighting-color);
+      }
+      #Remedies2 .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 3rem;
+      }
+      .Remedies2_content {
+         display: grid;
+         padding: 3rem;
+         /* place-items:  ; */
+       }
+       #Remedies2 h1 {
+         font-size: 3rem;
+         font-weight: bold;
+       }
+       #Remedies2 h3{
+      font-size: 2rem;
+      font-weight: bold;
+      }
+      #Remedies2 .pmed {
+         font-size:  4rem;
+          color: var(--secondary-color);
+      }
+      #Remedies2 .p2med {
+         font-size:  2rem;
+          color: var(--secondary-color);
+      }
+      
+     /*footer*/
+     footer{
+        background: var(--dark-color);
+        padding: 2rem;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+      }
+      /*responsive*/
+      @media (max-width: 786px){
+        html{
+          font-size: 40%;
+        }
+        #phome .container{
+          flex-direction: column;
+        }
+        .phome_image{
+          display: grid;
+          place-items: center;
+        }
+        #allopathic .container{
+          flex-direction: column;
+        }
+        .allopathic_image{
+          display: grid;
+          place-items: center;
+        }
+        #Remedies .container{
+          flex-direction: column;
+        }
+        .Remedies_image{
+          display: grid;
+          place-items: center;
+        }
+        #Remedies2 .container{
+          flex-direction: column;
+        }
+        .Remedies2_image{
+          display: grid;
+          place-items: center;
+        }
+      }
+      @media (max-width: 500px) {
+        html{
+          font-size: 32%;
+        }
+        #phome .container{
+          flex-direction: column;
+        }
+        .phome_image{
+          display: grid;
+          place-items: center;
+        }
+        #allopathic .container{
+          flex-direction: column;
+        }
+        .allopathic_image{
+          display: grid;
+          place-items: center;
+        }
+        #Remedies .container{
+          flex-direction: column;
+        }
+        .Remedies_image{
+          display: grid;
+          place-items: center;
+        }
+        #Remedies2 .container{
+          flex-direction: column;
+        }
+        .Remedies2_image{
+          display: grid;
+          place-items: center;
+        }
+      }
